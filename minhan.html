@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tỏ tình với Crush</title>
+    <title>Tỏ Tình</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            margin-top: 150px;
         }
-        
+
         h1 {
-            color: #FF69B4;
+            color: #FF4081;
         }
-        
+
+        p {
+            color: #333333;
+        }
+
+        .response-input {
+            margin-top: 20px;
+        }
+
         button {
-            background-color: #FF69B4;
-            color: white;
             padding: 10px 20px;
-            font-size: 16px;
+            background-color: #FF4081;
+            color: #FFFFFF;
             border: none;
             cursor: pointer;
-            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Gửi lời tới em người yêu hơi cutee</h1>
-    <button onclick="showMessage()">Nhấn vô đi bàaa</button>
+    <h1>Chào em!</h1>
+    <p>Anh có điều quan trọng muốn nói với em.</p>
+    <p>Em có muốn trở thành bạn gái của anh không?</p>
+    <div class="response-input">
+        <button onclick="handleResponse('yes')">Có</button>
+        <button onclick="handleResponse('no')">Không</button>
+    </div>
 
     <script>
-        function showMessage() {
-            alert("Wo ai niiiii");
+        function handleResponse(response) {
+            if (response === "yes") {
+                alert("Em đã làm anh hạnh phúc nhất trên thế giới này!\nAnh hứa sẽ luôn yêu thương và chăm sóc em.\nCảm ơn em vì đã chấp nhận trái tim anh!");
+            } else if (response === "no") {
+                alert("Em đã làm anh thất vọng.\nAnh hiểu và tôn trọng quyết định của em.\nCảm ơn em vì đã cho anh cơ hội tỏ tình.");
+            }
         }
     </script>
 </body>
